@@ -1,123 +1,57 @@
 <div align="center">
 <h1>FMA's Complement - An alternative to 2's complement for matrix multiplications</h1>
-  
-<a href="https://github.com/Fileforma/FMA-Complement//" target="_blank" title="GitHub stars">
-<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FFileforma%2FFMA-Complement&label=Online&countColor=%23263759" />
-<img src="https://img.shields.io/github/stars/Fileforma" alt="GitHub stars"/>
-</a>
 
-**Google Colab GPU access** in `your favorite programming language`
-
-Receive [project updates](https://antipythonai.substack.com/)
-
-
-<img src="https://res.cloudinary.com/dcrelr5e7/image/upload/v1706581854/Virtual_Assistant_Promotion_of_Services_Facebook_Cover_Photo_kxqr4d.png" alt="Banner"/>
-
+<img src="https://res.cloudinary.com/dcrelr5e7/image/upload/v1712307387/Screenshot_from_2024-04-05_04-54-42_bzjnus.png" alt="Banner"/>
 </div>
 
+[Getting Started](https://kibichomurage.medium.com/hashing-a-matrix-multiplication-in-c-a-friendly-introduction-to-fmas-complement-36ea1562a18d)
+
+[Official Website](https://fileforma.com/)
 
 ## What's this?
-AntiPython Colab is a source to source compiler that let's you **build AI in Java, Rust, JavaScript, Flutter, C#, Go, Ocaml(and etc...)** utilizing free Google Colab GPUs!
+Fused Multiply Add’s complement or FMA's complement is a custom binary number system designed to calculate vector dot products.
 
-It's blazingly fast and very robust as it uses websockets and the Treesitter C library under the hood.
+FMA’s complement is still in R&D. The algorithm is somewhat slow, however, this [Medium Article](https://kibichomurage.medium.com/hashing-a-matrix-multiplication-in-c-a-friendly-introduction-to-fmas-complement-36ea1562a18d) guides programmers through a working implementation in the C language.
 
-✔ Web GUI for ease of access
+## Why is FMA's complement important?
+✔ **Dot product alternative** — FMA’s complement opens up research into alternative algorithms for calculating vector dot products.
 
-✔ No language lock-in! Free and opensource language servers available!
+✔ **Arithmetic on compressed forms** — FMA’s complement compresses matrices and permits matrix multiplications in a compressed state. Decoding is not necessary.
 
-✔ Super secure language servers running on your personal device.
+✔ **Cache awareness** — FMA’s complement caches intermediate dot product results. This reduces the total number of CPU instructions needed to perform a matrix multiplication.
 
+✔ **Linear Basis multiplications** — FMA’s complement permits one to calculate few vector dot products and guess (with reasonable accuracy) the results of related vector dot products.
 
-### Motivation
-AI is super interesting but Python is a bore. We built a compiler that translates programming languages to Python!
-
-AntiPython Colab is built for:
-
--   Programmers interested in free GPU access and AI - just without the Python.
--   Developers keen on accessing Python's *vast AI tooling* without touching Python. 
--   Companies that seek to add AI to their products without needing to hire Python devs.
--   Hobbyists who realize they spend more time setting up Python environments than actual coding.
+## What's Fileforma?
+FileForma is a startup. We make custom compilers and file formats for internet companies.
 
 ## Development Status!
-This is a work in progress. Send direct feeback here - murage@fileforma.com
-
-25th Jan - Built Chrome extension interface.
-
-29th Jan - Java imports working. 
-
-[Sponsor your favorite language here🙏](https://opencollective.com/fileforma)
-
-Join the [mailing list](https://antipythonai.substack.com/)
+This is a work in progress. Send direct feeback to **murage@fileforma.com** or Twitter @**murage_kibicho** 
 
 <div align="center">
 <h1>✨ Getting started ✨</h1>
-<h3>Java demo showing Java to Python imports available</h3>
-<p> <b>Node JS and GCC<b> needed to compile Javascript and C</p>
 </div>
-  
-[Watch the video tutorial](https://youtu.be/mmfHCCA0IHE)
 
-1. Clone the repo to your personal computer
-   ```
-   git clone https://github.com/Fileforma/AntiPython-AI-Compiler-Colab.git
-   ```
-2. Open the folder `AntiPython-AI-Compiler-Colab`
-   ```
-   cd AntiPython-AI-Compiler-Colab
-   ```
+This [tutorial](https://kibichomurage.medium.com/hashing-a-matrix-multiplication-in-c-a-friendly-introduction-to-fmas-complement-36ea1562a18d) covers getting started with FMA's complement.
 
-3. Open the folder `ChromeExtension-Frontend`
-   ```
-   cd ChromeExtension-Frontend
-   ```
-4. Install node modules using npm
-   ```
-   npm install
-   ```
-5. Build the Chrome Extension. A new folder `dist` is created inside **ChromeExtension-Frontend**
-   ```
-   npm run build
-   ```
-6. Open Google Chrome and visit `chrome://extensions` in a new tab. Enable Developer Mode.
-7. Click the `Load unpacked button` and select the folder **dist** created in `Step 5`.
-8. Visit the Google Colab webpage `https://colab.research.google.com/` and create a new notebook.
+The code in this repo is a prototype accompanying the tutorial.
 
-9. Go back to the folder `AntiPython-AI-Compiler-Colab`. Open a *new* terminal window.
-10. Open the folder `Compiler-Backend` and open the folder `Translator`
-   ```
-   cd Compiler-Backend && cd Translator
-   ```
-11. Start the Language Server
-    ```
-    clear && gcc main.c mongoose.c cJSON.c ../SupportedLanguages/tree-sitter-java/src/parser.c ../TreeSitterLibrary/libtree-sitter.a -o main.o && ./main.o
-    ```
-13. Go back to the folder `ChromeExtension-Frontend` from Step 3. Open another *new* terminal window. Start the extension server.
-    ```
-    npm start
-    ```
-14. Go to the Google Colab page and have fun with the Java Demo!
-    *Only imports working at the moment. This is a demo showing the Chrome interface*
-    Try these Java examples
-    ```
-    import math;
-    import com.fileforma.tensorflow;
-    import com.fileforma.numpy as numpy;
-    ```
+[Official Website](https://fileforma.com/)
 
 ## Our other products
 [Making VS Code Extensions for Engineering Managers and CTOs](https://www.udemy.com/course/vscode-extensions)
-
 [FFmpeg Data Structures in the C language](https://www.udemy.com/course/part-1-video-coding-with-ffmpeg-and-c-in-replit-online-ide)  
 
 
+[Commercial License](https://fileforma.com/)
 
 ## Financial Supporters
 
-🙏 Get Lifetime Support [for Early Backers](https://opencollective.com/fileforma)
+🙏 Get Lifetime Support [for Early Backers](https://fileforma.com/#presalePage)
 
-🏢 Corporate Sponsor [support](https://opencollective.com/fileforma)
+🏢 Corporate Licenses [support](https://fileforma.com/#presalePage)
 
-Join the [mailing list](https://antipythonai.substack.com/)
+Join the [mailing list](https://fileforma.com/#presalePage)
 
 
 [<img src="https://img.shields.io/twitter/follow/murage_kibicho" alt="Follow for updates"/>](https://twitter.com/murage_kibicho)
